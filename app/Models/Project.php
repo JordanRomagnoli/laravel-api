@@ -18,6 +18,11 @@ class Project extends Model
         'cover_img'
     ];
 
+    protected $hidden = [
+        'id',
+        'type_id',
+    ];
+
     //Relationships
 
     public function type()
