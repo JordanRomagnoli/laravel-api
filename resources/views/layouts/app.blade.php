@@ -21,32 +21,32 @@
         <header>
             <div class="container">
                 
-            <nav>
-                <ul class="p-0">
-                    <li>
-                        <a href="/">Home</a>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.dashboard') }}">Dashboard</a>
-                        </li>
+                <nav>
+                    <ul class="p-0">
                         <li>
+                            <a href="/">Home</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin.dashboard') }}">Dashboard</a>
+                            </li>
+                            <li>
 
-                            <a href="{{ route('admin.projects.index') }}">I nostri progetti</a>
-                            <a href="{{ route('admin.types.index') }}">Il nostro target</a>
-                            <a href="{{ route('admin.tags.index') }}">Le nostre tecnologie</a>
+                                <a href="{{ route('admin.projects.index') }}">I nostri progetti</a>
+                                <a href="{{ route('admin.types.index') }}">Il nostro target</a>
+                                <a href="{{ route('admin.tags.index') }}">Le nostre tecnologie</a>
 
+                            </li>
                         </li>
-                    </li>
-                </ul>
+                    </ul>
 
-                <form method="POST" action="{{ route('logout') }}">
-                    @csrf
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
 
-                    <button type="submit" class="">
-                        Log Out
-                    </button>
-                </form>
-                   
-            </nav>
+                        <button type="submit" class="">
+                            Log Out
+                        </button>
+                    </form>
+                    
+                </nav>
             </div>
         </header>
 
