@@ -26,6 +26,19 @@
 
         section{
             height: 100vh;
+            padding-top: 80px;
+        }
+
+        h1, span, li{
+            margin-bottom: 20px
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        ul{
+            list-style-type: none;
         }
     </style>
 

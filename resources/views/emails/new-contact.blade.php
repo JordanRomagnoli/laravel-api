@@ -6,12 +6,10 @@
 
     <section>
         <h1>
-            Ciao Jordan !
+            Portfolio
         </h1>
 
-        <p>
-            Hai ricevuto un nuovo messaggio!
-        </p>
+        <span>Hai ricevuto un nuovo messaggio!</span>
 
         <ul>
             <li>
