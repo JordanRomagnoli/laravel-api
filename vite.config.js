@@ -18,6 +18,7 @@ export default defineConfig({
                 'resources/scss/partials/index-type-admin.scss',
                 'resources/scss/partials/edit-project.scss',
                 'resources/scss/partials/create-edit-type-tags.scss',
+                'resources/scss/partials/admin-contacts.scss',
                 'resources/scss/app.scss',
                 'resources/js/app.js',
             ],

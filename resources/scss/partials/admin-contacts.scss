@@ -1,0 +1,48 @@
+#index-contacts-admin{
+
+    height: 100vh;
+    padding-top: 80px;
+    .container{
+        .table{
+
+            border: 2px solid black;
+            thead{
+                th{
+                    padding: 20px 10px;
+                    font-weight: bolder;
+                    background-color: transparent;   
+                    border-bottom: 1px solid rgba(128, 128, 128, 0.217);
+                }
+            }
+
+            tbody{
+              
+                tr{
+
+                    border: 1px solid rgba(128, 128, 128, 0.217);
+                    &:hover{
+                        background-color: rgba(0, 0, 0, 0.103);
+                    }
+                    th{
+                        background-color: transparent;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        .show-button{
+                            background-color: transparent;
+                            border: 2px solid black;
+                            color: black;
+                            text-decoration: none;
+                            padding: 3px 12px;
+                            transition: background-color 0.5s;
+                            &:hover{
+                                background-color: black;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

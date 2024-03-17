@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\MainController as AdminMainController;
 use App\Http\Controllers\Admin\ProjectController as AdminProjectController;
 use App\Http\Controllers\Admin\TypeController as AdminTypeController;
 use App\Http\Controllers\Admin\TagController as AdminTagController;
+use App\Http\Controllers\Admin\ContactController as AdminContactController;
 
 
 /*
@@ -25,7 +26,6 @@ use App\Http\Controllers\Admin\TagController as AdminTagController;
 
 Route::get('/', [MainController::class, 'index'])->name('home');
 
-// Definisco la rotta per mostrare i type ai Guest
 Route::prefix('types')
             ->name('types.')
             ->group(function () {
@@ -34,7 +34,6 @@ Route::prefix('types')
             Route::get('/{type}', [TypeController::class, 'show'])->name('show');
 });
 
-// Definisco la rotta per mostrare i progetti ai Guest
 Route::prefix('projects')
             ->name('projects.')
             ->group(function () {
@@ -53,6 +52,11 @@ Route::prefix('admin')
     Route::resource('projects', AdminProjectController::class);
     Route::resource('types', AdminTypeController::class);
     Route::resource('tags', AdminTagController::class);
+
+    Route::resource('contacts', AdminContactController::class)->only([
+        'index',
+        'show'
+    ]);
 });
 
 require __DIR__.'/auth.php';
